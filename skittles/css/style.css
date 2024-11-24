@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+    margin: 20px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    color: #ff758c;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff758c;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('../images/hero-bg.jpg') no-repeat center/cover;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #ff758c;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Flavors Section */
+.flavors {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.flavor-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flavor {
+    text-align: center;
+}
+
+.flavor img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer .contact-form {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+footer input, footer textarea, footer button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
